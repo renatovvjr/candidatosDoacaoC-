@@ -14,9 +14,9 @@ class MainClass {
     for(int i=0; i<10;i++){
       Console.Write("Informe a idade do candidato à doação: ", i);
       idade = int.Parse(Console.ReadLine());
-          if(idade<16 || idade >69){
+      if(idade<16 || idade >69){
         doadorMenorIdoso++;
-      }else if(idade>=16 && idade <= 17){
+        }else if(idade>=16 && idade <= 17){
         Console.Write("Está acompanhado de pais ou responsável? Digite [1 - SIM] ou [2 - NÃO]");
         simNao = int.Parse(Console.ReadLine());
         if(simNao==1){
